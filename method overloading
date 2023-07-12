@@ -1,0 +1,24 @@
+public class Flower {
+    String name;
+    String color;
+    int size;
+    
+    public Flower(String name, String color, int size){
+        this.name = name;
+        this.color = color;
+        this.size = size;
+    }
+    public void feature(){
+         System.out.println("Flower smell good");   
+    }
+     public void feature(String name, String color){
+         System.out.println("Flower is "+ name);   
+    }
+    public static void main(String[] args) {
+        Flower f = new Flower("Rose","Red",10);
+    
+        f.feature();
+        f.feature("Jasmine","White");
+    }
+    
+}
