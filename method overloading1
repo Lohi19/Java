@@ -1,0 +1,28 @@
+public class Calci {
+    int n1;
+    int n2;
+    int n3;
+    
+    public Calci(int n1, int n2, int n3){
+        this.n1 = n1;
+        this.n2 = n2;
+        this.n3 = n3;
+    }
+    public static void operation(){
+         System.out.println("hi");   
+    }
+     public static void operation(int n2, int n3, int n1){
+         System.out.println(n2+n3+n1);   
+    }
+    public static void operation(int n1, int n3){
+         System.out.println(n1*n3);   
+    }
+    public static void main(String[] args) {
+        Calci c = new Calci(2,3,5);
+    
+        operation();
+        operation(3,5);
+        operation(2,4,5);
+    }
+    
+}
